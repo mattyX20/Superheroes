@@ -1,0 +1,27 @@
+body {}
+
+.menu {
+    background-color: #d32a1c;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+/* dal bianco al nero al colore
+
+.hover {
+    filter: grayscale(100%);
+}
+
+.hover:hover {
+    filter: grayscale(0%);
+}
+*/
