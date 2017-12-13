@@ -1,27 +1,59 @@
-body {}
+@font-face {
+    font-family: AmericanCaptain;
+    src: url(../font/AmericanCaptain.ttf);
+}
 
-.menu {
+@font-face {
+    font-family: "Testo";
+    src: url("../font/PeignotLTStd-Light.otf");
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#main-header {
     background-color: #d32a1c;
     width: 100%;
     height: auto;
     text-align: center;
 }
 
+.margin-top {
+    margin-top: 25px;
+}
+
 .logo {
-    width: 120px;
-    height: auto;
+    width: 100px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
-
-/* dal bianco al nero al colore
-
-.hover {
-    filter: grayscale(100%);
+.bigger {
+    font-size: 50pt;
+    font-family: AmericanCaptain;
+    color: #d32a1c;
 }
 
-.hover:hover {
-    filter: grayscale(0%);
+.title-text-fragment {
+    text-align: right;
+    font-family: "Testo";
+    font-size: 30pt;
 }
-*/
+
+.why {
+    font-size: 175pt;
+    text-align: left;
+    color: #d32a1c;
+    font-family: Testo;
+    bottom: 80px;
+    right: 27px;
+}
+
+#characters-container img {
+    width: 100%;
+}
