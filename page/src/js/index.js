@@ -10,17 +10,21 @@ $(function () {
         var context = msg.data;
         var html = template(context);
         $("#characters-container").html(html);
-        var source2 = document.getElementById("personaggio-template").innerHTML;
-        var template2 = Handlebars.compile(source2);
         // recupero ID
-        $(".id").click(function () {
-            var idshow = $(this).attr("data-id");
-            var elshow = msg.data.results.filter(function (el) {
-                return el.id == idshow;
-            })[0];
-            console.log(elshow);
-            $("#personaggio-container").html(template2(elshow));
-        });
+        $(".character-container")
+            // Mosrtra descrizione dei personaggi
+            .on("click", function () {
+                $(this).find("#card").flip('toggle');
+                // Nasconde descrizione dei personaggi
+            }).on("mouseleave", function () {
+                $(this).find(".character-description").hide();
+                // Mostra nome dei personaggi
+            }).on("mouseover", function () {
+                $(this).find(".character-name").show();
+            }).on("mouseleave", function () {
+                // Nasconde nome dei personaggi
+                $(this).find(".character-name").hide();
+            });
     }).fail(function (err) {
         console.log(err);
     });

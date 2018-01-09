@@ -8,6 +8,11 @@
     src: url("../font/PeignotLTStd-Light.otf");
 }
 
+@font-face {
+    font-family: futura;
+    src: url("../font/Futura Light font.ttf");
+}
+
 html,
 body {
     width: 100%;
@@ -32,59 +37,90 @@ body {
     width: 100px;
     padding-top: 5px;
     padding-bottom: 5px;
+    position: relative;
+    top: 11px;
 }
 
-.bigger {
-    font-size: 50pt;
-    font-family: AmericanCaptain;
-    color: #d32a1c;
+.width {
+    width: 690px;
+    border-top: 1px solid;
+    stroke: white;
+    color: white;
+}
+
+.container {
+    background-image: url(../img/Bg.png);
+    background-size: cover;
 }
 
 .title-text-fragment {
-    text-align: right;
-    font-family: "Testo";
-    font-size: 30pt;
-    left: 152px;
+    text-align: center;
+    font-family: AmericanCaptain;
+    font-size: 20pt;
+    color: white;
+    letter-spacing: 3px;
+    margin-top: 18px;
+    margin-right: 270px;
+    margin-left: 270px;
 }
 
 .bottom {
     bottom: 35px;
 }
 
-.why {
-    font-size: 122pt;
-    text-align: left;
-    color: #d32a1c;
-    font-family: Testo;
-    right: 27px;
-    left: 126px;
-    bottom: 28px;
-}
-
 #characters-container img {
     width: 100%;
 }
 
-.id {
+.character-container {
     color: black;
-    opacity: 0.5;
+    position: relative;
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
     background-size: cover;
-    width: 100px;
-    height: 100px;
+    transform: translate(-50%;
+    -50%);
     background-repeat: no-repeat;
+    transition: .5s ease-in-out;
 }
 
-.id:hover {
+.character-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.character-container:hover {
     cursor: pointer;
-    opacity: 1;
+    -webkit-filter: grayscale(0%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
 }
 
-.color-title {
+.character-description p {
     color: white;
-    font-family: AmericanCaptain;
+    font-family: futura;
+    font-size: 12pt;
+    background-color: #ff4136;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
 }
 
-.color-paragraph {
+.character-name {
+    position: absolute;
+    bottom: 0;
     color: white;
-    font-family: Testo;
+    font-family: futura;
+    padding: 0 15px;
+}
+
+.copyright {
+    color: white;
+    font-family: futura;
+    font-size: 12pt;
 }
