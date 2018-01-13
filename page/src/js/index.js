@@ -14,11 +14,7 @@ $(function () {
         $(".character-container")
             // Mosrtra descrizione dei personaggi
             .on("click", function () {
-<<<<<<< HEAD
                 $(this).find(".character-description").show();
-=======
-                $(this).find("#card").flip('toggle');
->>>>>>> origin/Develop
                 // Nasconde descrizione dei personaggi
             }).on("mouseleave", function () {
                 $(this).find(".character-description").hide();
