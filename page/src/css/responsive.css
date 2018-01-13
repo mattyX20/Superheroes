@@ -1,0 +1,134 @@
+/* Smartphone */
+
+@media only screen and (min-width: 320px) {
+    .title-text-fragment {
+        text-align: center;
+        font-family: AmericanCaptain;
+        font-size: 20pt;
+        color: white;
+        letter-spacing: 3px;
+        margin: 18px 156px;
+    }
+    .font-size {
+        font-size: 50pt;
+    }
+    .character-name {
+        position: absolute;
+        display: inline-block;
+        bottom: 0;
+        color: white;
+        background-color: #ff4136;
+        font-family: futura;
+        padding: 0 15px;
+        font-size: 50pt;
+    }
+    .character-container {
+        width: 359px;
+        margin: 0 0px;
+        margin-bottom: 18px;
+        color: black;
+        position: relative;
+        -webkit-filter: grayscale(100%);
+        /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+        background-size: cover;
+        transform: translate(-50%;
+        -50%);
+        background-repeat: no-repeat;
+        transition: .5s ease-in-out;
+    }
+    .character-description p {
+        color: white;
+        font-family: futura;
+        font-size: 20pt;
+        background-color: #ff4136;
+        padding: 15px;
+        height: 100%;
+    }
+    .copyright {
+        color: white;
+        font-family: futura;
+        font-size: 25pt;
+        margin: 0 0px;
+        margin-bottom: 18px;
+        text-align: center;
+    }
+}
+
+
+/* Tablet */
+
+@media only screen and (min-width: 768px) {
+    .title-text-fragment {
+        text-align: center;
+        font-family: AmericanCaptain;
+        font-size: 20pt;
+        color: white;
+        letter-spacing: 3px;
+        margin: 18px 160px;
+    }
+    .font-size {
+        font-size: 50pt;
+    }
+    .character-container {
+        width: 359px;
+        margin-top: 18px;
+        color: black;
+        position: relative;
+        -webkit-filter: grayscale(100%);
+        /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+        background-size: cover;
+        transform: translate(-50%;
+        -50%);
+        background-repeat: no-repeat;
+        transition: .5s ease-in-out;
+    }
+    .character-description p {
+        color: white;
+        font-family: futura;
+        font-size: 18pt;
+        background-color: #ff4136;
+        padding: 15px;
+        height: 100%;
+    }
+}
+
+
+/* Laptop */
+
+@media only screen and (min-width: 1000px) {
+    .title-text-fragment {
+        text-align: center;
+        font-family: AmericanCaptain;
+        font-size: 20pt;
+        color: white;
+        letter-spacing: 3px;
+        margin: 18px 260px;
+    }
+    .character-container {
+        width: 359px;
+        margin-top: 0;
+        color: black;
+        position: relative;
+        -webkit-filter: grayscale(100%);
+        /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+        background-size: cover;
+        transform: translate(-50%;
+        -50%);
+        background-repeat: no-repeat;
+        transition: .5s ease-in-out;
+    }
+    .character-description p {
+        color: white;
+        font-family: futura;
+        font-size: 14pt;
+        background-color: #ff4136;
+        padding: 15px;
+        height: 100%;
+    }
+}
+
+
+}
