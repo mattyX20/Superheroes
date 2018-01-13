@@ -16,6 +16,7 @@
     <script src="src/js/index.js"></script>
     <!-- Characters Cards -->
     <script id="character-template" type="text/x-handlebars-template"> {{#each results}}
+<<<<<<< HEAD
         <div class="col-lg-3 character-container" data-id="{{id}}"> <img class="width-screen" src="../page/src/img/{{name}}.png">
             <!-- Character single desciption -->
             <div class="character-description" style="display:none">
@@ -27,12 +28,35 @@
     <!--Animation letter library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <!-- End Animation Effects -->
+=======
+        <div class="col front character-container" data-id="{{id}}"> <img src="../page/src/img/{{name}}.png">
+            <!-- Character single desciption -->
+            <div class="character-description back" style="display:none">
+                <p>{{description}}</p>
+            </div>
+            <div class="character-name" style="display: none;">
+                <h3>{{name}}</h3></div>
+        </div> {{/each}} </script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+>>>>>>> origin/Develop
 </head>
 
 <body>
     <!-- Canzone Avengers -->
+<<<<<<< HEAD
     <audio id="song" autoplay loop>
         <source src="../page/src/css/avengers.mp3" type="audio/mpeg"> Your browser does not support the audio element. </audio>
+=======
+    <audio id="Song" autoplay loop>
+        <source src="../page/src/css/AVENGERS%20%20INFINITY%20WAR%20Trailer%20Version%20Music%20%20Proper%20Official%20Movie%20Soundtrack%20Theme%20Song%20V1.mp3" type="audio/mpeg"> Your browser does not support the audio element. </audio>
+    <script>
+        var vid;
+        document.getElementById("Song");
+        vid.volume = 0.5;
+        vid.controller;
+    </script>
+>>>>>>> origin/Develop
     <!-- Header -->
     <header id="main-header"> <img class="logo" src="src/img/logo.png"> </header>
     <!-- Main -->
@@ -40,9 +64,13 @@
         <div class="row">
             <!-- Landing -->
             <div class="col text-center"> <img class="width" src="src/img/landing.png">
+<<<<<<< HEAD
                 <p class="title-text-fragment ml11"> <span class="text-wrapper">
                 <span class="line line1"></span> <span class="letters">Do you really think you know everything about the universe of avengers?</span> </span>
                 </p>
+=======
+                <p class="title-text-fragment">Do you really think you know everything about the universe of avengers?</p>
+>>>>>>> origin/Develop
             </div>
             <!-- Characters -->
             <div class="container">
@@ -55,12 +83,15 @@
     <footer class="container-fluid">
         <p class="copyright">&copy; 2018 Superheroes group</p>
     </footer>
+<<<<<<< HEAD
     <!-- Animation letter js -->
     <script src="src/js/animationletters.js"></script>
     <!-- Audio Volume scirpt -->
     <script>
         document.getElementById("song").volume = 0.1;
     </script>
+=======
+>>>>>>> origin/Develop
 </body>
 
 </html>
