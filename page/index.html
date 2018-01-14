@@ -13,15 +13,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
     <script src="src/js/index.js"></script>
     <!-- Characters Cards -->
-    <script id="character-template" type="text/x-handlebars-template"> {{#each results}}
-        <div class="col front character-container" data-id="{{id}}"> <img src="../page/src/img/{{name}}.png">
-            <!-- Character single desciption -->
-            <div class="character-description back" style="display:none">
-                <p>{{description}}</p>
+    <script id="character-template" type="text/x-handlebars-template">
+        {{#each results}}
+        <div class="col character-container" data-id="{{id}}">
+            <div class="front">
+                <img src="../page/src/img/{{name}}.png">
+                <div class="character-name" style="display:none">
+                    <h3>{{name}}</h3>
+                </div>
             </div>
-            <div class="character-name" style="display: none;">
-                <h3>{{name}}</h3></div>
-        </div> {{/each}} </script>
+            <div class="back">
+                <div class="character-description">
+                    <p>{{description}}</p>
+                </div>
+                <div class="character-name">
+                    <h3>{{name}}</h3>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </script>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
 </head>
