@@ -15,13 +15,13 @@ $(function () {
         $(".character-container")
             // Mosrtra descrizione dei personaggi
             .on("click", function () {
-                $(".character-container").not(this).flip(false);
                 $(this).flip("toggle");
                 // Nasconde descrizione dei personaggi
             }).on("mouseover", function () {
                 $(this).find(".front .character-name").fadeIn();
             }).on("mouseleave", function () {
                 $(this).find(".front .character-name").fadeOut();
+                $(this).flip(false);
             });
     }).fail(function (err) {
         console.log(err);
