@@ -15,15 +15,28 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
     <script src="src/js/index.js"></script>
     <!-- Characters Cards -->
-    <script id="character-template" type="text/x-handlebars-template"> {{#each results}}
-        <div class="col-lg-3 character-container" data-id="{{id}}"> <img class="width-screen" src="../page/src/img/{{name}}.png">
-            <!-- Character single desciption -->
-            <div class="character-description" style="display:none">
-                <p>{{description}}</p>
+    <script id="character-template" type="text/x-handlebars-template">
+        {{#each results}}
+        <div class="col character-container" data-id="{{id}}">
+            <div class="front">
+                <img src="../page/src/img/{{name}}.png">
+                <div class="character-name" style="display:none">
+                    <h3>{{name}}</h3>
+                </div>
             </div>
-            <div class="character-name" style="display: none;">
-                <h3 class="font-size">{{name}}</h3> </div>
-        </div> {{/each}} </script>
+            <div class="back">
+                <div class="character-description">
+                    <p>{{description}}</p>
+                </div>
+                <div class="character-name">
+                    <h3>{{name}}</h3>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
     <!--Animation letter library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <!-- End Animation Effects -->

@@ -10,20 +10,18 @@ $(function () {
         var context = msg.data;
         var html = template(context);
         $("#characters-container").html(html);
+        $(".character-container").flip({trigger:'manual'});
         // recupero ID
         $(".character-container")
             // Mosrtra descrizione dei personaggi
             .on("click", function () {
-                $(this).find(".character-description").show();
+                $(this).flip("toggle");
                 // Nasconde descrizione dei personaggi
-            }).on("mouseleave", function () {
-                $(this).find(".character-description").hide();
-                // Mostra nome dei personaggi
             }).on("mouseover", function () {
-                $(this).find(".character-name").show();
+                $(this).find(".front .character-name").fadeIn();
             }).on("mouseleave", function () {
-                // Nasconde nome dei personaggi
-                $(this).find(".character-name").hide();
+                $(this).find(".front .character-name").fadeOut();
+                $(this).flip(false);
             });
     }).fail(function (err) {
         console.log(err);
