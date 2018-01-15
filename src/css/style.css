@@ -1,0 +1,168 @@
+    /* Load Font */
+    
+    @font-face {
+        font-family: AmericanCaptain;
+        src: url(../font/AmericanCaptain.ttf);
+    }
+    
+    @font-face {
+        font-family: "Testo";
+        src: url("../font/PeignotLTStd-Light.otf");
+    }
+    
+    @font-face {
+        font-family: futura;
+        src: url("../font/Futura Light font.ttf");
+    }
+    /* CSS structure */
+    
+    html,
+    body {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        background-color: black;
+    }
+   
+    #main-header {
+        background-color: black;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    
+    .margin-top {
+        margin-top: 25px;
+    }
+    
+    .logo {
+        width: 100px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: relative;
+        top: 11px;
+    }
+    
+    .width {
+        width: 690px;
+        border-top: 1px solid;
+        stroke: white;
+        color: white;
+    }
+    
+    .container {
+        background-image: url(../img/Bg.png);
+        background-size: contain;
+    }
+    
+    .title-text-fragment {
+        text-align: center;
+        font-family: AmericanCaptain;
+        font-size: 20pt;
+        color: white;
+        letter-spacing: 3px;
+        margin: 18px 260px;
+    }
+    
+    #characters-container {
+        margin-top: 20px;
+    }
+    
+    #characters-container img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .col .front,
+    .col .back {
+        padding: 0 15px;
+        left: 0;
+        top: 0;
+    }
+    
+    .character-container {
+        position: relative;
+        -webkit-filter: grayscale(100%);
+        /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+        background-size: cover;
+        transform: translate(-50%;
+        -50%);
+        background-repeat: no-repeat;
+        transition: .5s ease-in-out;
+        overflow: hidden;
+        height: 400px;
+    }
+    
+    .character-description {
+        height: 100%;
+        width: 100%;
+        background-color: #ff4136;
+    }
+    
+    .character-container:hover {
+        cursor: pointer;
+        -webkit-filter: grayscale(0%);
+        /* Safari 6.0 - 9.0 */
+        filter: grayscale(0%);
+    }
+    
+    .character-description p {
+        color: white;
+        font-family: futura;
+        font-size: 14pt;
+        padding: 15px;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .character-name {
+        position: absolute;
+        bottom: 0;
+        color: white;
+        background-color: #ff4136;
+        font-family: futura;
+        padding: 0 15px;
+        padding-top: .5rem;
+    }
+    h3{
+    font-size: 20pt;
+    }
+    
+    .copyright {
+        color: white;
+        font-family: futura;
+        font-size: 20pt;
+        margin: 18px 0;
+        text-align: center;
+    }
+    /* Animation text */
+    
+    .ml11 .text-wrapper {
+        position: relative;
+        display: inline-block;
+        padding-top: 0.1em;
+        padding-right: 0.05em;
+        padding-bottom: 0.15em;
+    }
+    
+    .ml11 .line {
+        opacity: 0;
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: 3px;
+        background-color: #fff;
+        transform-origin: 0 50%;
+    }
+    
+    .ml11 .line1 {
+        top: 0;
+        left: 0;
+    }
+    
+    .ml11 .letter {
+        display: inline-block;
+        line-height: 1em;
+    }

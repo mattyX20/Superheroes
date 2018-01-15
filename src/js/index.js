@@ -1,5 +1,5 @@
 $(function () {
-    // chiamata generale di tutti i personaggi
+    // chiama tutti i personaggi
     $.getJSON("src/api/characters.json", {
         "apikey": "6855e608549da5f59a51c62c2f4f57b3"
     }).done(function (msg) {
@@ -9,23 +9,23 @@ $(function () {
         var template = Handlebars.compile(source);
         var context = msg.data;
         var html = template(context);
+        // Mostra il template nel html
         $("#characters-container").html(html);
+        $(".character-container").flip({
+            trigger: 'manual'
+        });
         // recupero ID
         $(".character-container")
-            // Mosrtra descrizione dei personaggi
+            // Abilita il flip
             .on("click", function () {
-                $(this).find("#card").flip('toggle');
-                // Nasconde descrizione dei personaggi
-            }).on("mouseleave", function () {
-                $(this).find(".character-description").hide();
-                // Mostra nome dei personaggi
+                $(this).flip("true");
+                // Mostra nome e descrizione dei personaggi  flippando
             }).on("mouseover", function () {
-                $(this).find(".character-name").show();
+                $(this).find(".front .character-name").fadeIn();
+                // Nasconde descrizione dei personaggi unflippando uscendo fuori con il mouse
             }).on("mouseleave", function () {
-                // Nasconde nome dei personaggi
-                $(this).find(".character-name").hide();
+                $(this).find(".front .character-name").fadeOut();
+                $(this).flip(false);
             });
-    }).fail(function (err) {
-        console.log(err);
-    });
+    })
 });
