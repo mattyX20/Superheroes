@@ -6,11 +6,16 @@
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta name="keywords" content="">
+<<<<<<< HEAD:index.html
     <!-- Favicon -->
     <link rel="shortcut icon" href="src/img/favicon.png"/>
     <!-- Bootstrap Style -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <!-- My style -->
+=======
+    <!-- Style -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+>>>>>>> origin/Develop:page/index.html
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/responsive.css">
     <!-- Script -->
@@ -18,6 +23,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
     <script src="src/js/index.js"></script>
     <!-- Characters Cards -->
+<<<<<<< HEAD:index.html
     <script id="character-template" type="text/x-handlebars-template"> {{#each results}}
         <div class="col-lg-3 character-container" data-id="{{id}}">
             <div class="front"> <img src="src/img/{{name}}.png">
@@ -39,6 +45,33 @@
     <!-- Animateletter library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <!-- End animation -->
+=======
+    <script id="character-template" type="text/x-handlebars-template">
+        {{#each results}}
+        <div class="col character-container" data-id="{{id}}">
+            <div class="front">
+                <img src="../page/src/img/{{name}}.png">
+                <div class="character-name" style="display:none">
+                    <h3>{{name}}</h3>
+                </div>
+            </div>
+            <div class="back">
+                <div class="character-description">
+                    <p>{{description}}</p>
+                </div>
+                <div class="character-name">
+                    <h3>{{name}}</h3>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+    <!--Animation letter library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <!-- End Animation Effects -->
+>>>>>>> origin/Develop:page/index.html
 </head>
 
 <body>
